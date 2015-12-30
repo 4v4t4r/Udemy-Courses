@@ -1,5 +1,5 @@
 # Install package and also update package.json, with dev dependency. These are
-not needed for the standard build (via npm install).
+# not needed for the standard build (via npm install).
 $ npm install moment --save-dev
 
 # Install both standard and dev dependencies:
