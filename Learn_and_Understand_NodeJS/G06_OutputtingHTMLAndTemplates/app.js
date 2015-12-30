@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+'use strict';
+
+// based on G05_LetsBuildAWebServer/app.js
+
+var http = require('http');
+var fs = require('fs');
+
+// event listener with the callback
+http.createServer(function(req, res) {
+
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+
+  var html = fs.readFileSync(__dirname + '/index.htm', 'utf8');
+  var message = 'Hello world...';
+  html = html.replace('{Message}', message);
+  res.end(html);
+
+}).listen(1337, '0.0.0.0'); 

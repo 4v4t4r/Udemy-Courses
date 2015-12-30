@@ -1,0 +1,15 @@
+# Install package and also update package.json, with dev dependency. These are
+not needed for the standard build (via npm install).
+$ npm install moment --save-dev
+
+# Install both standard and dev dependencies:
+$ npm install --dev
+
+# Install (in this case nodemon) module globally:
+$ npm install -g nodemon
+
+# Update packages, more https://docs.npmjs.com/cli/update:
+$ npm update
+
+# Recursive update:
+$ npm --depth 9999 update

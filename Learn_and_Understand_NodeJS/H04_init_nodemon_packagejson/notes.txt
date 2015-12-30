@@ -1,0 +1,31 @@
+NPM (node package manager):
+https://www.npmjs.com
+
+# Package file creation:
+$ npm init
+...
+$ cat package.json
+{
+  "name": "nodejs-test-app",
+  "version": "1.0.0",
+  "description": "NodeJS Test App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+# Script invoking, with the name 'test':
+$ npm test
+
+# Install package and also update package.json:
+$ npm install moment --save
+
+# Install standard dependencies from package.json:
+$ npm install
+
+# Update dependency versioning:
+^2.10.6 => update with different minor (10) + patch number (6)
+~2.10.6 => only patch number (6) updates
